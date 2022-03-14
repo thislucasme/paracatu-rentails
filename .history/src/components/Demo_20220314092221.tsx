@@ -76,7 +76,7 @@ export function Demo() {
                         </VStack>
 
                     </Navbar>}
-                    header={<Header height={60} p="xs" >
+                    header={<Header height={60} p="xs">
                         <Flex>
 
                             <Title order={3}>
@@ -105,8 +105,8 @@ export function Demo() {
                             </Title>
                             <Spacer />
                             <HStack>
-                                <Button leftIcon={<MdAddCircleOutline size={18} />}>
-                                    Anunciar
+                                <Button leftIcon={<MdAddCircleOutline size={14} />}>
+                                    Connect to database
                                 </Button>
                             </HStack>
                         </Flex>

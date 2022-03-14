@@ -76,8 +76,8 @@ export function Demo() {
                         </VStack>
 
                     </Navbar>}
-                    header={<Header height={60} p="xs" >
-                        <Flex>
+                    header={<Header height={60} p="xs">
+                        <Flex bgGradient='linear(to-r, teal.500, green.500)'>
 
                             <Title order={3}>
                                 <Text

@@ -1,9 +1,8 @@
-import { HStack, VStack, SimpleGrid, Flex, Spacer } from '@chakra-ui/react';
-import { AppShell, Button, Checkbox, ColorScheme, ColorSchemeProvider, Header, MantineProvider, Navbar, Select, Text, Title } from '@mantine/core';
+import { HStack, VStack, SimpleGrid } from '@chakra-ui/react';
+import { AppShell, Checkbox, ColorScheme, ColorSchemeProvider, Header, MantineProvider, Navbar, Select, Text, Title } from '@mantine/core';
 import { Card } from './Card';
 import '../style/style.css';
 import { useState } from 'react';
-import { MdAddCircleOutline } from 'react-icons/md'
 export function Demo() {
 
     const [colorScheme, setColorScheme] = useState<ColorScheme>('light');
@@ -76,40 +75,34 @@ export function Demo() {
                         </VStack>
 
                     </Navbar>}
-                    header={<Header height={60} p="xs" >
-                        <Flex>
+                    header={<Header height={60} p="xs">
 
-                            <Title order={3}>
-                                <Text
-                                    component="span"
-                                    align="center"
-                                    variant="gradient"
-                                    gradient={{ from: 'indigo', to: 'cyan', deg: 45 }}
-                                    size="xl"
-                                    weight={700}
-                                    style={{ fontFamily: 'Greycliff CF, sans-serif' }}
-                                >
-                                    Paracatu
-                                </Text>
-                                <Text
-                                    component="span"
-                                    align="center"
-                                    variant="gradient"
-                                    gradient={{ from: 'red', to: 'red', deg: 45 }}
-                                    size="xl"
-                                    weight={700}
-                                    style={{ fontFamily: 'Roboto, sans-serif' }}
-                                >
-                                    Rentail
-                                </Text>
-                            </Title>
-                            <Spacer />
-                            <HStack>
-                                <Button leftIcon={<MdAddCircleOutline size={18} />}>
-                                    Anunciar
-                                </Button>
-                            </HStack>
-                        </Flex>
+
+                        <Title order={3}>
+                            <Text
+                                component="span"
+                                align="center"
+                                variant="gradient"
+                                gradient={{ from: 'indigo', to: 'cyan', deg: 45 }}
+                                size="xl"
+                                weight={700}
+                                style={{ fontFamily: 'Greycliff CF, sans-serif' }}
+                            >
+                                Paracatu
+                            </Text>
+                            <Text
+                                component="span"
+                                align="center"
+                                variant="gradient"
+                                gradient={{ from: 'red', to: 'red', deg: 45 }}
+                                size="xl"
+                                weight={700}
+                                style={{ fontFamily: 'Roboto, sans-serif' }}
+                            >
+                                Rentail
+                            </Text>
+                        </Title>
+
                     </Header>}
                     styles={(theme) => ({
                         main: { backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[0] },

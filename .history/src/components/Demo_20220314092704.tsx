@@ -76,7 +76,7 @@ export function Demo() {
                         </VStack>
 
                     </Navbar>}
-                    header={<Header height={60} p="xs" >
+                    header={<Header height={60} p="xs">
                         <Flex>
 
                             <Title order={3}>

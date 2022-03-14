@@ -1,9 +1,8 @@
 import { HStack, VStack, SimpleGrid, Flex, Spacer } from '@chakra-ui/react';
-import { AppShell, Button, Checkbox, ColorScheme, ColorSchemeProvider, Header, MantineProvider, Navbar, Select, Text, Title } from '@mantine/core';
+import { AppShell, Checkbox, ColorScheme, ColorSchemeProvider, Header, MantineProvider, Navbar, Select, Text, Title } from '@mantine/core';
 import { Card } from './Card';
 import '../style/style.css';
 import { useState } from 'react';
-import { MdAddCircleOutline } from 'react-icons/md'
 export function Demo() {
 
     const [colorScheme, setColorScheme] = useState<ColorScheme>('light');
@@ -76,7 +75,7 @@ export function Demo() {
                         </VStack>
 
                     </Navbar>}
-                    header={<Header height={60} p="xs" >
+                    header={<Header height={60} p="xs">
                         <Flex>
 
                             <Title order={3}>
@@ -104,11 +103,7 @@ export function Demo() {
                                 </Text>
                             </Title>
                             <Spacer />
-                            <HStack>
-                                <Button leftIcon={<MdAddCircleOutline size={18} />}>
-                                    Anunciar
-                                </Button>
-                            </HStack>
+                            <h1>jddj</h1>
                         </Flex>
                     </Header>}
                     styles={(theme) => ({
