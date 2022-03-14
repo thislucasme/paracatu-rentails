@@ -77,7 +77,7 @@ export function Demo() {
 
                     </Navbar>}
                     header={<Header height={60} p="xs"  >
-                        <Flex mb={5}>
+                        <Flex>
 
                             {/* <Title order={3}>
                                 <Text

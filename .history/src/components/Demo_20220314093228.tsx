@@ -1,4 +1,4 @@
-import { HStack, VStack, SimpleGrid, Flex, Spacer, Image } from '@chakra-ui/react';
+import { HStack, VStack, SimpleGrid, Flex, Spacer } from '@chakra-ui/react';
 import { AppShell, Button, Checkbox, ColorScheme, ColorSchemeProvider, Header, MantineProvider, Navbar, Select, Text, Title } from '@mantine/core';
 import { Card } from './Card';
 import '../style/style.css';
@@ -76,20 +76,20 @@ export function Demo() {
                         </VStack>
 
                     </Navbar>}
-                    header={<Header height={60} p="xs"  >
-                        <Flex mb={5}>
+                    header={<Header height={60} p="xs" style={{ background: "#4A5568" }} >
+                        <Flex>
 
-                            {/* <Title order={3}>
+                            <Title order={3}>
                                 <Text
                                     component="span"
                                     align="center"
-
-                                    color={"#00000"}
+                                    variant="gradient"
+                                    color={"white"}
                                     size="xl"
                                     weight={700}
                                     style={{ fontFamily: 'Greycliff CF, sans-serif' }}
                                 >
-                                    Unai
+                                    Paracatu
                                 </Text>
                                 <Text
                                     component="span"
@@ -102,8 +102,7 @@ export function Demo() {
                                 >
                                     Rentail
                                 </Text>
-                            </Title> */}
-                            <Image src='https://i.ibb.co/XZhw1Kt/logoaluguel.png' />
+                            </Title>
                             <Spacer />
                             <HStack>
                                 <Button leftIcon={<MdAddCircleOutline size={18} />}>
@@ -117,9 +116,9 @@ export function Demo() {
                     })}
                 >
                     <SimpleGrid columns={3} spacing={10}>
-                        <Card url='https://a0.muscache.com/im/pictures/2619f42e-9719-4698-be2b-0c019e129682.jpg?im_w=720' />
-                        <Card url='https://a0.muscache.com/im/pictures/5ca52faf-3b3d-4450-bcbf-a4e783f1cadd.jpg?im_w=720' />
-                        <Card url='https://a0.muscache.com/im/pictures/40588b31-71f1-4b0f-a755-ea3005d246c3.jpg?im_w=720' />
+                        <Card />
+                        <Card />
+                        <Card />
                     </SimpleGrid>
 
                 </AppShell>

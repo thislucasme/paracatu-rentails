@@ -20,7 +20,7 @@ export function Card({ url }: Props) {
 
   return (
     <Box maxW='300px' borderWidth='1px' borderRadius='lg' overflow='hidden'>
-      <Image w={"100%"} h={210} src={url} />
+      <Image src={"https://a0.muscache.com/im/pictures/2619f42e-9719-4698-be2b-0c019e129682.jpg?im_w=720"} />
 
       <Box p='6'>
         <Box display='flex' alignItems='baseline'>

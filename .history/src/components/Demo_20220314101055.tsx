@@ -77,7 +77,7 @@ export function Demo() {
 
                     </Navbar>}
                     header={<Header height={60} p="xs"  >
-                        <Flex mb={5}>
+                        <Flex>
 
                             {/* <Title order={3}>
                                 <Text
@@ -103,7 +103,7 @@ export function Demo() {
                                     Rentail
                                 </Text>
                             </Title> */}
-                            <Image src='https://i.ibb.co/XZhw1Kt/logoaluguel.png' />
+                            <Image my={3} src='https://i.ibb.co/XZhw1Kt/logoaluguel.png' />
                             <Spacer />
                             <HStack>
                                 <Button leftIcon={<MdAddCircleOutline size={18} />}>

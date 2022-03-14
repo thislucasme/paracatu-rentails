@@ -1,4 +1,4 @@
-import { HStack, VStack, SimpleGrid, Flex, Spacer, Image } from '@chakra-ui/react';
+import { HStack, VStack, SimpleGrid, Flex, Spacer } from '@chakra-ui/react';
 import { AppShell, Button, Checkbox, ColorScheme, ColorSchemeProvider, Header, MantineProvider, Navbar, Select, Text, Title } from '@mantine/core';
 import { Card } from './Card';
 import '../style/style.css';
@@ -77,9 +77,9 @@ export function Demo() {
 
                     </Navbar>}
                     header={<Header height={60} p="xs"  >
-                        <Flex mb={5}>
+                        <Flex>
 
-                            {/* <Title order={3}>
+                            <Title order={3}>
                                 <Text
                                     component="span"
                                     align="center"
@@ -89,7 +89,7 @@ export function Demo() {
                                     weight={700}
                                     style={{ fontFamily: 'Greycliff CF, sans-serif' }}
                                 >
-                                    Unai
+                                    Paracatu
                                 </Text>
                                 <Text
                                     component="span"
@@ -102,8 +102,7 @@ export function Demo() {
                                 >
                                     Rentail
                                 </Text>
-                            </Title> */}
-                            <Image src='https://i.ibb.co/XZhw1Kt/logoaluguel.png' />
+                            </Title>
                             <Spacer />
                             <HStack>
                                 <Button leftIcon={<MdAddCircleOutline size={18} />}>
