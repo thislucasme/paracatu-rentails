@@ -1,5 +1,5 @@
 import { HStack, VStack, SimpleGrid, Flex, Spacer, Image } from '@chakra-ui/react';
-import { AppShell, Button, Checkbox, ColorScheme, ColorSchemeProvider, Header, MantineProvider, Navbar, Select, Text } from '@mantine/core';
+import { AppShell, Button, Checkbox, ColorScheme, ColorSchemeProvider, Header, MantineProvider, Navbar, Select, Text, Title } from '@mantine/core';
 import { Card } from './Card';
 import '../style/style.css';
 import { useState } from 'react';
