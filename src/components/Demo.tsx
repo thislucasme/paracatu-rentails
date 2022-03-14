@@ -1,5 +1,5 @@
-import { HStack, Text, VStack } from '@chakra-ui/react';
-import { AppShell, Navbar, Header, Checkbox, Select } from '@mantine/core';
+import { HStack, VStack } from '@chakra-ui/react';
+import { AppShell, Checkbox, Header, Navbar, Select, Text, Title } from '@mantine/core';
 import { Card } from './Card';
 
 export function Demo() {
@@ -13,7 +13,7 @@ export function Demo() {
                 <Checkbox my={2} size="md" label={"Chacara / Sitio"} />
 
                 <VStack mt={5} alignItems={"start"}>
-                <Text>Cidade</Text>
+                    <Text>Cidade</Text>
                     <HStack w={"100%"} >
 
                         <Select
@@ -69,17 +69,43 @@ export function Demo() {
 
             </Navbar>}
             header={<Header height={60} p="xs">
-                <Text fontSize={"18px"} fontWeight={"bold"}>ParacatuRentail</Text>
+
+
+                <Title order={3}>
+                <Text
+                    component="span"
+                    align="center"
+                    variant="gradient"
+                    gradient={{ from: 'indigo', to: 'cyan', deg: 45 }}
+                    size="xl"
+                    weight={700}
+                    style={{ fontFamily: 'Greycliff CF, sans-serif' }}
+                >
+                    Paracatu
+                </Text>
+                <Text
+                    component="span"
+                    align="center"
+                    variant="gradient"
+                    gradient={{ from: 'red', to: 'red', deg: 45 }}
+                    size="xl"
+                    weight={700}
+                    style={{ fontFamily: 'Greycliff CF, sans-serif' }}
+                >
+                    Rentail
+                </Text>
+</Title>
+
             </Header>}
             styles={(theme) => ({
                 main: { backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[0] },
             })}
         >
-          <HStack>
-          <Card/>
-           <Card/>
-           <Card/>
-          </HStack>
+            <HStack>
+                <Card />
+                <Card />
+                <Card />
+            </HStack>
         </AppShell>
     );
 }
